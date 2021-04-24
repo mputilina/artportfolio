@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800);
+
+html {
+    line-height: 1.15;
+    font-family: Open Sans, Arial, sans-serif;
+    line-height: 2;
+}
+
+body {
+    background: #11172B;
+}
+
+main{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1248px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.head{
+    margin-top: 48px;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li a{
+    text-decoration: none;
+}
+
+img {
+    height: 32px;
+}
+
+.arrow img{
+    height: 48px;
+}
+
+#square{
+    width: 600px;
+    height: 400px;
+    background: #C4C4C4;
+    border-radius: 2px;
+    margin-right: 16px;
+    overflow: auto;
+}
+
+#square1{
+    width: 60px;
+    height: 40px;
+    background: #C4C4C4;
+    border-radius: 2px;
+    margin-right: 16px;
+}
+
+#pictBut{
+    cursor: pointer;
+}
+
+.table{
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    margin-right: 32px;
+    margin-left: -16px;
+}
+
+.arrow{
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.table img{
+    padding-bottom: 16px;
+}
+
+.iblock{
+	list-style: none;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button{
+    background-color: #11172B;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+}
+
+ul{
+    padding: 0;
+	list-style: none;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.imgProperty{
+    width: 15%;
+    height: auto;
+    position: absolute;
+}
+
+textarea{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #222;
+}
+
+textarea:focus{
+    border: 1px;
+}
+
+input{
+    height: 32px;
+    width: 32px;
+    border: none;
+}

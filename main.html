@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Студенческое портфолио ИТМО</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+    <header class="main-header">
+        <div class="wrapper"> //убрать
+            <div class="grid between-lg middle-lg"> //свойство грид
+                <a href="" class="main-header__logo">
+                    <img src="images/logo.png" alt="Университет ИТМО" />
+                </a>
+                <nav class="main-header__nav middle-lg"> //margin left auto внутри flex
+                    <a href="" class="main-header__link ">111111</a>
+                    <a href="" class="main-header__link ">Путилина М.Б.</a>
+                
+                    <div>
+                        <a href="" class="icon-header">
+                            <img src="images/user.svg" alt="user" />
+                        </a>
+                        <a href="" class="icon-header">
+                            <img src="images/exit.svg" alt="exit" />
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="searching"> // не section
+        <div class="wrapper">
+            <div class="cell portfolio">
+                <div class="grid between-lg"> //лишнее
+                <h1 class="search__heading">
+                    <a href="" class="cards-file__link">
+                    Студенческое портфолио</a>
+                </h1>
+            
+                <button class="button button-red button-rounded">
+                    <i class="icon-plus" aria-hidden="true"></i> //черех фон
+                    Загрузить проект
+                </button>
+                </div>
+            </div>
+            <div class="grid"> //все в тег форм
+                <div class="cell">
+                    <div class="form-group">
+                        <label>Поиск</label> //связать с инпутом + добавить кнопку поиска
+                        <input type="text" placeholder="Введите текст" />
+                    </div>
+                </div>
+                    <div class="cell xs-12 sm-6 lg-4 "> 
+                        <div class="form-group">
+                            <label>Дисциплина</label> //связать с селектом
+                            <select data-placeholder="Название дисциплины"> //ul/li
+                                <option></option>
+                                <option>Архитектурная графика</option>
+                                <option>Системы сквозного проектирования</option>
+                                <option>Полиграфический дизайн</option>
+                                <option>Типографика</option>
+                                <option>Эргономика и промышленный дизайн</option>
+                                <option>Веб-технологии</option>
+                                <option>Графические технологии</option>
+                                <option>Полиграфический дизайн</option>
+                                <option>Полиграфический дизайн</option>
+                                <option>Полиграфический дизайн</option>
+                                <option>Полиграфический дизайн</option>
+                                <option>Полиграфический дизайн</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cell xs-12 sm-6 lg-4 ">
+                        <div class="form-group">
+                            <label>Преподаватель</label>
+                            <select data-placeholder="ФИО преподвателя">
+                                <option></option>
+                                <option>Балканский</option>
+                                <option>Сопроненко </option>
+                                <option>Смолин</option>
+                                <option>Сысоева</option>
+                                <option>Карпушина</option>
+                                <option>Безбах</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cell xs-12 sm-6 lg-4 ">
+                        <div class="form-group">
+                            <label>Курс</label>
+                            <select data-placeholder="Выберите курс">
+                                <option></option>
+                                <option>1 курс</option>
+                                <option>2 курс</option>
+                                <option>3 курс</option>
+                                <option>4 курс</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cell xs-12 sm-6 lg-4 ">
+                        <div class="form-group">
+                            <label>Сезон</label>
+                            <select data-placeholder="Выберите год">
+                                <option></option>
+                                <option>2018/2019</option>
+                                <option>2019/2020</option>
+                                <option>2020/2021</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cell xs-12 sm-6 lg-4 ">
+                        <div class="form-group">
+                            <label>Группа</label>
+                            <select data-placeholder="Выберите группу">
+                                <option></option>
+                                <option>P3469</option>
+                                <option>P3369</option>
+                                <option>P3269</option>
+                                <option>P3472</option>
+                                <option>P3372</option>
+                                <option>P3272</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cell xs-12 sm-6 lg-4 ">
+                    <button class="button button-red button-rounded button-bordered">
+                       Все
+                    </button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cards" class="cards section-block separator-shadow"> 
+        <div class="wrapper">
+            <div class="grid"> 
+                <article class="cell xs-12 sm-6 lg-4 cards__item">
+                    <div class="cards__content-wrapper">
+                        <div class="cards__img-block"> 
+                            <img src="images/work1.jpg" alt="" class="cards__img">
+                        </div>
+                        <h2 class="cards__item-heading">
+                            <a href="" class="cards-file__link">
+                            Бюро фантастических путешествий Continuum
+                            </a>
+                        </h2>
+                        <a href="" class="cards-file__link">Путилина М.Б.</a>
+                    </div>
+                </article>
+                <article class="cell xs-12 sm-6 lg-4 cards__item">
+                    <div class="cards__content-wrapper">
+                        <div class="cards__img-block">
+                            <img src="images/work1.jpg" alt="" class="cards__img">
+                        </div>
+                        <h2 class="cards__item-heading">
+                            <a href="" class="cards-file__link">
+                                Бюро фантастических путешествий Continuum
+                            </a>
+                        </h2>
+                        <a href="" class="cards-file__link">Путилина М.Б.</a>
+                    </div>
+                </article>
+                <article class="cell xs-12 sm-6 lg-4 cards__item">
+                    <div class="cards__content-wrapper">
+                        <div class="cards__img-block">
+                            <img src="images/work1.jpg" alt="" class="cards__img">
+                        </div>
+                        <h2 class="cards__item-heading">
+                            <a href="" class="cards-file__link">
+                                Бюро фантастических путешествий Continuum
+                            </a>
+                        </h2>
+                        <a href="" class="cards-file__link">Путилина М.Б.</a>
+                    </div>
+                </article>
+                <article class="cell xs-12 sm-6 lg-4 cards__item">
+                    <div class="cards__content-wrapper">
+                        <div class="cards__img-block">
+                            <img src="images/work1.jpg" alt="" class="cards__img">
+                        </div>
+                        <h2 class="cards__item-heading">
+                            <a href="" class="cards-file__link">
+                                Бюро фантастических путешествий Continuum
+                            </a>
+                        </h2>
+                        <a href="" class="cards-file__link">Путилина М.Б.</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    </body>
+</html>
