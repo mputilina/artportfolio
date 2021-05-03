@@ -56,25 +56,17 @@ img {
 }
 
 .arrow img{
-    height: 48px;
+    height: 40px;
 }
 
-#square{
+.square{
     width: 600px;
     height: 400px;
     background: #C4C4C4;
     border-radius: 2px;
-    margin-right: 16px;
-    overflow: auto;
+    overflow: hidden;
 }
 
-#square1{
-    width: 60px;
-    height: 40px;
-    background: #C4C4C4;
-    border-radius: 2px;
-    margin-right: 16px;
-}
 
 #pictBut{
     cursor: pointer;
@@ -87,7 +79,6 @@ img {
     align-items: left;
     justify-content: flex-start;
     margin-right: 32px;
-    margin-left: -16px;
 }
 
 .arrow{
@@ -96,6 +87,7 @@ img {
     flex-direction: column;
     align-items: left;
     justify-content: space-between;
+    margin-left: 32px;
 }
 
 .table img{
@@ -131,25 +123,106 @@ ul{
 }
 
 .imgProperty{
-    width: 15%;
+    width: 100%;
     height: auto;
     position: absolute;
+    
 }
 
 textarea{
-    position: absolute;
+    position: relative;
     background-color: transparent;
-    border: none;
     font-size: 14px;
     color: #222;
+    width: 100px;
+    height: 100px;
+    border: none;
 }
 
-textarea:focus{
-    border: 1px;
-}
+
 
 input{
     height: 32px;
     width: 32px;
     border: none;
+}
+
+.pic_container{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.pic_container:hover .resizer{
+    background-image: url(/images/resize_icon.svg);
+}
+
+.resizer{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+}
+
+.editable{
+    border: none;
+    position: absolute;
+    cursor: grabbing;
+}
+
+.editable:hover{
+    border: 2px solid black;
+}
+
+.resizer.nw{
+    top: -1px;
+    left: -1px;
+    cursor: nw-resize;
+}
+
+.resizer.ne{
+    top: -1px;
+    right: -1px;
+    cursor: ne-resize;
+    transform: rotate(90deg);
+}
+
+.resizer.se{
+    bottom: -1px;
+    right: -1px;
+    cursor: se-resize;
+    transform: rotate(180deg);
+}
+
+.resizer.sw{
+    bottom: -1px;
+    left: -1px;
+    cursor: sw-resize;
+    transform: rotate(-90deg);
+}
+
+.plus{
+    background-image: url("../images/plus.svg");
+    height: 40px;
+    width: 40px;
+}
+
+.minus{
+    background-image: url("../images/minus.svg");
+    height: 40px;
+    width: 40px;
+}
+.arrowup{
+    background-image: url("../images/arrow1.svg");
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    height: 40px;
+    width: 40px;
+}
+.arrowdown{
+    background-image: url("../images/arrow2.svg");
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    height: 40px;
+    width: 40px;
 }

@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"checkJs": true,
+		"module": "esnext",
+		"target": "esnext",
+		
+		"strict": true,
+
+		"sourceMap": true,
+		"declaration": true,
+
+		"outDir": "../public/scripts", 
+		
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,   
+		"forceConsistentCasingInFileNames": true
+	},
+	"exclude": [
+		"node_modules",
+		"**/node_modules/*"
+	]
+}

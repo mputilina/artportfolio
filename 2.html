@@ -76,20 +76,5 @@
         <button class="button button-blue button-bordered"><a href=""></a>Создать презентацию</a></button>
         
     </main>
-
-    <script>
-        const loadBut1 = document.getElementById("pict1");
-        const butBut1 = document.getElementById("pictBut1");
-        
-        butBut1.addEventListener("click", function(){
-            loadBut1.click();
-        });
-        
-        let loadFile = function(event) {
-        let output = document.getElementById('Square');
-        output.src = URL.createObjectURL(event.target.files[0]);
-        };
-    </script>
-
     </body>
 </html>

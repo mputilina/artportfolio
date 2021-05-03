@@ -260,7 +260,6 @@ input, select {
     background-color: #fff;
     border: 1px solid #d4d6d7;
     border-radius: 2px;
-    transition: 0.3s ease;
     height: 40px;
     width: 600px;
 }
@@ -308,11 +307,17 @@ article{
     padding-right: 16px;
 }
 
-#Square{
+#Squarel{
     width: 600px;
     height: 400px;
     background: #E5E5E5;
     border: 1px solid #979797;
     border-radius: 2px;
     margin-right: 120px;
+    overflow: hidden;
+}
+
+.preview{
+    width:100%;
+    height: auto;
 }
